@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="597.0" style="-fx-background-color: #DCDCDC;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView prefHeight="566.0" prefWidth="597.0">
+        <columns>
+            <TableColumn prefWidth="44.0" text="자리" />
+          <TableColumn prefWidth="61.0" text="이름" />
+          <TableColumn prefWidth="77.0" text="ID" />
+            <TableColumn prefWidth="98.0" text="상품명" />
+            <TableColumn prefWidth="93.0" text="상품금액" />
+            <TableColumn prefWidth="72.0" text="결제수단" />
+            <TableColumn prefWidth="151.0" text="시간" />
+        </columns>
+      </TableView>
+      <Button id="t1OrderReg" layoutX="274.0" layoutY="572.0" mnemonicParsing="false" text="확인" />
+   </children>
+</AnchorPane>

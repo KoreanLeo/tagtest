@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="646.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane prefHeight="646.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="재고관리">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="632.0" prefWidth="800.0">
+                     <children>
+                        <Button fx:id="stockDrink" layoutX="32.0" layoutY="70.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="100.0" text="음료류" />
+                        <Button fx:id="stockRamen" layoutX="32.0" layoutY="170.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="100.0" text="라면류" />
+                        <Button fx:id="stockHotdog" layoutX="32.0" layoutY="370.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="100.0" text="핫도그" />
+                        <Button fx:id="stockMeals" layoutX="32.0" layoutY="270.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="100.0" text="식사류" />
+                        <TreeTableView fx:id="stockTable" layoutX="158.0" layoutY="70.0" prefHeight="536.0" prefWidth="642.0">
+                          <columns>
+                            <TreeTableColumn prefWidth="67.0" text="분류" />
+                            <TreeTableColumn prefWidth="91.0" text="재고명" />
+                              <TreeTableColumn prefWidth="98.0" text="Box당개수" />
+                              <TreeTableColumn prefWidth="118.0" text="Box입고수량" />
+                              <TreeTableColumn prefWidth="122.0" text="입고수량" />
+                              <TreeTableColumn prefWidth="145.0" text="개수" />
+                          </columns>
+                        </TreeTableView>
+                        <Button fx:id="stockSnack" layoutX="32.0" layoutY="470.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="100.0" text="간식" />
+                        <Button fx:id="stockSearchBtn" layoutX="394.0" layoutY="20.0" mnemonicParsing="false" text="검색" />
+                        <TextField fx:id="stockSearchTxt" layoutX="262.0" layoutY="20.0" prefHeight="29.0" prefWidth="132.0" promptText="재고명" />
+                        <Label layoutX="61.0" layoutY="22.0" text="분류">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="157.0" layoutY="1.0" orientation="VERTICAL" prefHeight="606.0" prefWidth="0.0" />
+                        <Button fx:id="stockAddMenu" layoutX="604.0" layoutY="20.0" mnemonicParsing="false" text="메뉴추가" />
+                        <Button fx:id="stockDeleteMenu" layoutX="690.0" layoutY="20.0" mnemonicParsing="false" text="메뉴삭제" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="매출관리">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="632.0" prefWidth="800.0">
+                     <children>
+                        <Separator orientation="VERTICAL" prefHeight="606.0" prefWidth="0.0" />
+                        <Label layoutX="61.0" layoutY="22.0" text="분류">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="stockDrink1" layoutX="32.0" layoutY="70.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="100.0" text="쿠폰" />
+                        <Separator layoutX="157.0" layoutY="1.0" orientation="VERTICAL" prefHeight="606.0" prefWidth="0.0" />
+                        <Button fx:id="stockDrink11" layoutX="32.0" layoutY="170.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="100.0" text="음식" />
+                        <TableView layoutX="158.0" layoutY="50.0" prefHeight="536.0" prefWidth="642.0" translateY="20.0">
+                           <columns>
+                              <TableColumn prefWidth="67.0" text="분류" />
+                              <TableColumn prefWidth="77.0" text="이름" />
+                              <TableColumn prefWidth="77.0" text="ID" />
+                              <TableColumn prefWidth="98.0" text="상품명" />
+                              <TableColumn prefWidth="93.0" text="상품금액" />
+                              <TableColumn prefWidth="79.0" text="결제수단" />
+                              <TableColumn prefWidth="149.0" text="시간" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="stockSearchBtn1" layoutX="394.0" layoutY="20.0" mnemonicParsing="false" text="검색" />
+                        <TextField fx:id="stockSearchTxt1" layoutX="262.0" layoutY="20.0" prefHeight="29.0" prefWidth="132.0" promptText="상품명" />
+                        <ComboBox layoutX="168.0" layoutY="20.0" prefHeight="29.0" prefWidth="94.0" promptText="분류" />
+                        <Button fx:id="stockAddMenu11" layoutX="690.0" layoutY="20.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="80.0" text="삭제" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="stockmanagementExit" layoutX="717.0" layoutY="43.0" mnemonicParsing="false" text="종료" translateY="-40.0" />
+   </children>
+</AnchorPane>
